@@ -1,54 +1,43 @@
 # Fiitness-tracker-App
-Python-based backend designed to help users monitor and analyze their nutrition and workout routines. Utilizing natural language processing through Nutritionix's APIs, it simplifies the logging of meals and exercises. This app makes health tracking accessible to everyone.
 
-## Table of Contents
-1. [Features](#features)
-1. [Installation](#installation)
-1. [Usage](#usage)
-1. [Contributions](#contributions)
-1. [Future Improvements](#future-improvements)
-1. [License](#license)
+It can be hard to know how much or what kind of activity you need to stay healthy. Fitbliss is a fitness tracker application that has various features to help its users manage their health. It helps its users know how much physical activity they need, keep track of their daily exercises, and shows them how many calories they are burning.
 
-## Features
-- **Natural Language Meal and Exercise Logging**: Log meals and exercises using natural language, processed through the Nutritionix API for detailed nutritional info and calories burned.
-- **Habit Tracking and Visualization**: Track and visualize health and fitness habits using Pixela, enhanced with custom Python visualizations for in-depth data analysis.
-- **Speech Recognition**: Audio input capabilities for hands-free data logging.
-- **User Authentication**: Securely manage user data and personal health records.
-- **CSV-Based Data Management**: Organized and efficient storage of user, nutrition, and workout data.
-- **Email Notifications**: Get reminders and alerts to maintain consistent health tracking.
+Users have to create an account to use the application. The user’s information is stored in a MySQL database. This information (height, weight, year of birth, gender) is used to calculate the recommended amount of calories they need to burn daily. They are able to add exercises done during their day, and a pie chart is used to show this daily activity. They can also view their entire history of exercises done.
 
-## Installation
-- Clone the repository: `git clone https://github.com/siddhant-vij/Health-Fitness-Tracker.git`
-- Navigate to the project directory: `cd Health-Fitness-Tracker`
-- Install dependencies: `conda create --name fitness --file requirements.txt`
-- Activate the environment: `conda activate fitness`
-- Create a `.env` file in the project root directory based on the `.env.example` template.
-- Run the local tests in the application: `python main.py`
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-1.png"/></p>
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-2.png"/></p>
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-3.png"/></p>
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-4.png"/></p>
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-5.png"/></p>
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-6.png"/></p>
+<p align="center"><img src="https://github.com/Abhijeet-Pitumbur/Fitbliss/blob/main/project/resources/screenshot-7.png"/></p>
 
-## Usage
-After launching the application, create an account or log in. Begin by logging your meals and exercises using simple, natural language. Explore the various visualizations and insights generated based on your data.
+### [Download Application](https://github.com/Abhijeet-Pitumbur/Fitbliss/raw/main/Fitbliss.jar)
 
-## Contributions
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-1. **Fork the Project**
-1. **Create your Feature Branch**: 
-    ```bash
-    git checkout -b feature/AmazingFeature
-    ```
-1. **Commit your Changes**: 
-    ```bash
-    git commit -m 'Add some AmazingFeature'
-    ```
-1. **Push to the Branch**: 
-    ```bash
-    git push origin feature/AmazingFeature
-    ```
-1. **Open a Pull Request**
+##### [Download MySQL Database Dump](https://github.com/Abhijeet-Pitumbur/Fitbliss/raw/main/Fitbliss-Database.sql)  · GitHub
+##### [View PDF Report](https://bit.ly/abhijt-fitbliss-report)  · Google Drive
+##### [Download Repository](https://github.com/Abhijeet-Pitumbur/Fitbliss/archive/refs/heads/main.zip)  · GitHub
 
-## Future Improvements
-- **Tkinter GUI**: Interactive and straightforward graphical interface.
-- **Meal Planner**: Integrate a meal planning feature with recipes and grocery lists based on nutritional goals - refer & use a 3rd party API.
-- **Mobile Application**: Develop a mobile version for convenient on-the-go access.
-- **Advanced Analytics**: Use machine learning to provide personalized health insights and recommendations.
-- **Integration with Fitness Devices**: Sync data from fitness trackers for automated exercise logging.
-- **Community Features**: Implement social sharing, challenges, and leaderboards to encourage user engagement.
+## Application Prerequisites
+- Download the [Fitbliss](https://github.com/Abhijeet-Pitumbur/Fitbliss/raw/main/Fitbliss.jar) application as an executable JAR file.
+- Download *[Fitbliss-Database.sql](Fitbliss-Database.sql)* MySQL database dump as an SQL file.
+- Download and install a web server stack, like [XAMPP](https://www.apachefriends.org/) or [WAMP](https://www.wampserver.com/).
+- Open XAMPP or WAMP Control Panel.
+- Start Apache and MySQL.
+- Open a web browser and go to PHPMyAdmin at [http://localhost/phpmyadmin](http://localhost/phpmyadmin).
+- Create a new database named *fitbliss*.
+- Import your downloaded *[Fitbliss-Database.sql](Fitbliss-Database.sql)* file to the new database.
+- Open your downloaded *[Fitbliss.jar](Fitbliss.jar)* file.
+
+## Languages, Frameworks and Tools
+- Java 18.0
+- Swing GUI Toolkit 18.0
+- MySQL 8.0
+- IntelliJ IDEA Ultimate 2022.2
+- XAMPP 8.1
+- Java MySQL Connector 8.0
+
+## Credits
+- Abhijeet Pitumbur
+- Oudish Thacooree
+- Viman Singh Sreepaul
